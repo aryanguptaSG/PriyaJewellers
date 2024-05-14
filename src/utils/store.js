@@ -5,8 +5,6 @@ export const getAllProduct = async ()=>{
     let data = await posts.data
     console.log(data);
     return data
-    // let localStore = JSON.parse(localStorage.getItem("localStore"))
-    // return localStore!=null ? localStore : []
 }
 
 export const getProductByID = async (id)=>{
@@ -17,10 +15,6 @@ export const getProductByID = async (id)=>{
 }
 
 export const addProduct = (product)=>{
-    // let localStore = JSON.parse(localStorage.getItem("localStore"))
-    // localStore = localStore ? localStore : []
-    // localStore.push(product)
-    // localStorage.setItem("localStore",JSON.stringify(localStore))
     axios.post("/api/product/create",product).then(res=>{
         console.log(res);
     }).catch(error=>{
