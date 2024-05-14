@@ -97,9 +97,6 @@ function AddProduct() {
 
       <div className='grid lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-1 gap-5'>
       {showImages && images.map((item,i)=>{
-        console.log('==================================== inside');
-        console.log(images);
-        console.log('====================================');
             return <div key={i} className='relative w-[300px] h-[300px]'>
               <svg onClick={()=>{removeImage(item)}} className="w-5 h-5 ml-2 absolute top-1 right-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>

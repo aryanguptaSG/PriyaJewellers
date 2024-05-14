@@ -31,6 +31,7 @@ function ProductDetails({params}) {
           {
               product.imagesArray.map((img,i)=>{
                   return <CldImage
+                  key={i}
                   width="300"
                   height="300"
                   className='rounded-md shadow-box'

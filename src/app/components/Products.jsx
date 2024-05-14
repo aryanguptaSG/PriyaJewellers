@@ -47,8 +47,8 @@ function Products({query}) {
         <div className='my-5 md:px-5 sm:px-2 grid lg:grid-cols-4  md:grid-cols-3 sm:grid-cols-1 gap-5 px-5'>
           {
             productsList.map((item,index)=>{
-              return <Link href={`/product/${item._id}`}>
-                <div key={index} className='bg-[#F9F9F9] flex flex-col justify-center items-center space-y-5 rounded-sm p-10 shadow cursor-pointer'>
+              return <Link key={index} href={`/product/${item._id}`}>
+                <div className='bg-[#F9F9F9] flex flex-col justify-center items-center space-y-5 rounded-sm p-10 shadow cursor-pointer'>
                   <div className='flex justify-center items-center'>
                   <CldImage
                     width="200"
