@@ -14,8 +14,8 @@ function Footer() {
                 <p className='text-sm'>Phone : <span className='font-thin'>0987654322</span></p>
                 <h2 className='text-sm font-thin'>Social Networks</h2>
                 <div className='flex space-x-5'>
-                    <Image width={24} src={twitter} alt='twitter'/>
-                    <Image width={24} src={insta} alt='instagram'/>
+                    <a target="_blank" href={"https://twitter.com/aryanguptaSG"} ><Image width={24} src={twitter} alt='twitter'/></a>
+                    <a target="_blank" href={"https://www.instagram.com/aryanguptasg/"} ><Image width={24} src={insta} alt='instagram'/></a>
                     <Image width={24} src={whatsapp} alt='whatsapp'/>
                 </div>
             </section>
